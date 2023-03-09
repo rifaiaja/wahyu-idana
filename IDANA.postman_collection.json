@@ -1,0 +1,166 @@
+{
+	"info": {
+		"_postman_id": "d5da4509-25f9-417e-b359-9ade4f6ba4f9",
+		"name": "IDANA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3179053"
+	},
+	"item": [
+		{
+			"name": "Authenticate",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"wahyu3@gmail.com\",\r\n    \"password\":\"password\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/authenticate",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"authenticate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Greeting Cairin",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjYWlyaW4iLCJleHAiOjE2Nzg0MDgxMDUsImlhdCI6MTY3ODM5MDEwNX0.mdUgBjX7NHYbS4PeoLKZ4AJB8zjBqS5eVZJ-rXl9vRG3oJd3pI6GObKw1ypb3TiCMiJ-7so16N7ocbpBepkmVQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/halo",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"halo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjYWlyaW4iLCJleHAiOjE2Nzg0MDgxMDUsImlhdCI6MTY3ODM5MDEwNX0.mdUgBjX7NHYbS4PeoLKZ4AJB8zjBqS5eVZJ-rXl9vRG3oJd3pI6GObKw1ypb3TiCMiJ-7so16N7ocbpBepkmVQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/users",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create User",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjYWlyaW4iLCJleHAiOjE2Nzg0MDgxMDUsImlhdCI6MTY3ODM5MDEwNX0.mdUgBjX7NHYbS4PeoLKZ4AJB8zjBqS5eVZJ-rXl9vRG3oJd3pI6GObKw1ypb3TiCMiJ-7so16N7ocbpBepkmVQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"name\": \"wahyu2\",\r\n        \"email\": \"wahyu2@gmail.com\",\r\n        \"password\": \"qwerty\",\r\n        \"role\": \"USER\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/users",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Detail User",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjYWlyaW4iLCJleHAiOjE2Nzg0MDgxMDUsImlhdCI6MTY3ODM5MDEwNX0.mdUgBjX7NHYbS4PeoLKZ4AJB8zjBqS5eVZJ-rXl9vRG3oJd3pI6GObKw1ypb3TiCMiJ-7so16N7ocbpBepkmVQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/users/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

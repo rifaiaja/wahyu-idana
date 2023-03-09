@@ -15,6 +15,12 @@ This is microservice appliacation for user using springboot - job vacancy test w
 - search file SpringBootJwtApplication.java in this path src\main\java\com\wahyu\idana\cairin
 - just run as java application
 
+## How to check the API
+
+- open your favourite client API tester, like POSTMAN
+- please import file IDANA.postman_collection.json. The file in the root
+- make sure you already login first with username `admin@gmail.com` and password `qwerty` with this enpoint `/authenticate`
+
   
 ## Directory Structure
 

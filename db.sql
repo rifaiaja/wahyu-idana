@@ -17,3 +17,6 @@ CREATE TABLE roles (
     PRIMARY KEY (id),
 	UNIQUE (name)
 );
+
+INSERT INTO users (name, email, password, role)
+VALUES ('Admin', 'admin@gmail.com', '$2a$10$/PpkB41SPh5vOo9k.jUDhedX1QtZotDOJOGr9lOPzejVobkWiziiS', 'ADMIN');
